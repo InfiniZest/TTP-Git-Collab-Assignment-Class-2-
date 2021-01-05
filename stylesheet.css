@@ -1,0 +1,48 @@
+button{
+    border: none;
+    color: #EDA8FF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+#title {
+    text-align: center;
+    font-size: 3em;
+}
+.intro, .fact1{
+    width: 1000px;
+    padding: 10px;
+    border: 2px solid gray;
+    margin-left: 23%;
+    text-align: center;
+}
+
+.column1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.column2 {
+    float: left;
+    width: 40%;
+    padding: 10px;
+}
+#graph1 {
+    background-color: black;
+    border: 2px solid gray;
+}
+.column2 h2{
+    width: 700px;
+    padding: 50px;
+    border: 2px solid gray;
+    text-align: center;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
