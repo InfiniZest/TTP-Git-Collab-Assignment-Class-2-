@@ -2,17 +2,27 @@
 <html lang = "en">
     <head>
         <meta charset="uft-8">
+        <link rel="stylesheet" href="https://use.typekit.net/edr4bek.css">
         <title>Learn More About Food Shortages in NYC</title>
         <style>
+            @font-face {
+            font-family:"filson-pro";
+            src:url("https://use.typekit.net/af/c12453/0000000000000000000157bf/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/c12453/0000000000000000000157bf/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/c12453/0000000000000000000157bf/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+            font-display:auto;font-style:normal;font-weight:700;
+            }
+            *{
+                font-family: "filson-pro";
+            }
             button{
                 border: none;
-                color: #EDA8FF;
+                background-color: #EBB22C;
                 padding: 15px 32px;
                 text-align: center;
                 text-decoration: none;
                 display: inline-block;
                 font-size: 16px;
-                margin: 2px 2px;
+                margin: 4%;
+                margin-left: 42%;
                 cursor: pointer;
             }
             #title {
@@ -21,13 +31,17 @@
             }
             .intro, .fact1{
                 width: 1000px;
-                padding: 10px;
-                border: 2px solid gray;
-                margin-left: 23%;
+                padding: 50px;
+                border: 5px solid coral;
+                border-radius: 15px;
+                margin-left: 21%;
                 text-align: center;
             }
-
-            .column1 {
+            .row, ,row2{
+                margin-top: 3%;
+                margin-bottom: 3%;
+            }
+            .column1{
                 float: left;
                 width: 50%;
                 padding: 10px;
@@ -37,20 +51,74 @@
                 width: 40%;
                 padding: 10px;
             }
-            #graph1 {
-                background-color: black;
-                border: 2px solid gray;
+            #graph1{
+                border: 5px solid coral;
+                border-radius: 10px;
+                margin-left: 8%;
             }
             .column2 h2{
                 width: 700px;
                 padding: 50px;
-                border: 2px solid gray;
+                font-size: 30px;
+                border: 5px solid coral;
+                border-radius: 70px;
+                margin-top: 5%;
                 text-align: center;
+            }
+            .column3, .column4{
+                float: left;
+                width: 47%;
+                padding: 10px;
+            }
+            #graph2 {
+                border: 5px solid coral;
+                border-radius: 10px;
+                width: 700px;
+                height: 300px;
+                margin-left: 15%;
+                margin-top: 3%;
+                margin-bottom: 3%;
+            }
+            #graph3 {
+                border: 5px solid coral;
+                border-radius: 10px;
+                width: 700px;
+                height: 300px;
+                margin-left: 15%;
+                margin-top: 3%;
+                margin-bottom: 3%;
+            }
+            #graph4{
+                border: 5px solid coral;
+                border-radius: 10px;
+                width: 1000px;
+                height: 400px;
+                margin-left: 23%;
+                margin-top: 3%;
+                margin-bottom: 3%;
             }
             .row:after {
                 content: "";
                 display: table;
                 clear: both;
+            }
+            .fact2{
+                width: 1000px;
+                padding: 50px;
+                border: 5px solid coral;
+                border-radius: 15px;
+                margin-left: 21%;
+                margin-top: 25%;
+                text-align: center;
+            }
+            .fact3{
+                width: 1000px;
+                padding: 50px;
+                border: 5px solid coral;
+                border-radius: 15px;
+                margin-left: 21%;
+                margin-top: 3%;
+                text-align: center;
             }
         </style>
     </head>
@@ -70,6 +138,23 @@
                 <h2>The increase in visitors is driven primarily by first-time visitors (91 percent), followed by families with children (79 percent)</h2>
             </div>
         </div>
-        
+        <div class="row2">
+            <div class="column3">
+                <img id = "graph2" src="shortFood.png">
+            </div>
+            <div class="column4">
+                <img id = "graph3" src = "outOfFood.png">
+            </div>
+        </div>
+        <h3 class = "fact2">More than half (53 percent) of food pantries and soup kitchens surveyed reported running
+                    out of food during the month of April 2020. Among participants reporting running out of food during the month of April 2020, 48 percent
+                    reported turning people away due to lack of food</h3>
+        <img id = "graph4" src = "shortageOfFood.png">
+        <h3 class = "fact3">As of April 20, 2020, there has been a near 100% increase in people rejected due to food shortages. As the economy is shutdown, the percentage of individuals 
+            who are turned away are expected to increase
+        </h3>
+        <div class="information">
+            <a href = "https://www.foodbanknyc.org/update-on-food-insecurity-during-covid-19/"><button>To Learn More Click Here</button></a>
+        </div>
     </body>
 </html>
